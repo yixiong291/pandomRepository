@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyx.dao.ReaderBookDao">
+    <insert id="insertBook" parameterType="com.wyx.entity.ReaderBook">
+        insert into reader_book values
+            (#{id},#{name},#{bookName},#{ISBN});
+    </insert>
+
+    <select id="queryAll" resultType="com.wyx.entity.ReaderBook" resultMap="reBookMap">
+        select * from reader_book;
+    </select>
+
+    <select id="queryByISBN" parameterType="String" resultType="com.wyx.entity.ReaderBook" resultMap="reBookMap">
+        select * from reader_book where ISBN = #{ISBN}
+    </select>
+
+    <select id="queryByName" parameterType="String" resultType="com.wyx.entity.ReaderBook" resultMap="reBookMap">
+        select * from reader_book where name = #{name}
+    </select>
+    <delete id="deleteByName" parameterType="String" >
+        delete from reader_book where book_name = #{bookName}
+    </delete>
+
+    <select id="queryByBookNa" parameterType="String" resultType="com.wyx.entity.ReaderBook" resultMap="reBookMap">
+        select * from reader_book where book_name = #{bookName}
+    </select>
+    <resultMap id="reBookMap" type="com.wyx.entity.ReaderBook">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="bookName" column="book_name"/>
+        <result property="ISBN" column="ISBN"/>
+    </resultMap>
+</mapper>

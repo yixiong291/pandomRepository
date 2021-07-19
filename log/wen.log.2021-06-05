@@ -1,0 +1,52 @@
+2021-06-05 00:01:52  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 00:01:52  [ main:364 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 00:01:52  [ main:368 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc793c2] was not registered for synchronization because synchronization is not active
+2021-06-05 00:01:53  [ main:590 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a1d3c1a] will not be managed by Spring
+2021-06-05 00:01:53  [ main:594 ] - [ DEBUG ]  ==>  Preparing: select * from book_list where ISBN = ? 
+2021-06-05 00:01:53  [ main:614 ] - [ DEBUG ]  ==> Parameters: 12345(String)
+2021-06-05 00:01:53  [ main:625 ] - [ DEBUG ]  <==      Total: 1
+2021-06-05 00:01:53  [ main:627 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc793c2]
+2021-06-05 19:12:20  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 19:12:21  [ main:407 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 19:12:21  [ main:412 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc793c2] was not registered for synchronization because synchronization is not active
+2021-06-05 19:12:21  [ main:664 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@71652c98] will not be managed by Spring
+2021-06-05 19:12:21  [ main:667 ] - [ DEBUG ]  ==>  Preparing: update book_list set status = ? where ISBN = ? 
+2021-06-05 19:12:21  [ main:685 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc793c2]
+2021-06-05 19:34:19  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 19:34:19  [ main:348 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 19:34:19  [ main:352 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@329a1243] was not registered for synchronization because synchronization is not active
+2021-06-05 19:34:20  [ main:566 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@60b85ba1] will not be managed by Spring
+2021-06-05 19:34:20  [ main:570 ] - [ DEBUG ]  ==>  Preparing: update book_list set status = ? where ISBN = ? 
+2021-06-05 19:34:20  [ main:587 ] - [ DEBUG ]  ==> Parameters: 借出(String), 12345(String)
+2021-06-05 19:34:20  [ main:599 ] - [ DEBUG ]  <==    Updates: 1
+2021-06-05 19:34:20  [ main:599 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@329a1243]
+2021-06-05 20:01:02  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 20:01:02  [ main:354 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 20:01:02  [ main:357 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894] was not registered for synchronization because synchronization is not active
+2021-06-05 20:01:02  [ main:525 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@d71adc2] will not be managed by Spring
+2021-06-05 20:01:02  [ main:529 ] - [ DEBUG ]  ==>  Preparing: select * from book_list; 
+2021-06-05 20:01:02  [ main:547 ] - [ DEBUG ]  ==> Parameters: 
+2021-06-05 20:01:02  [ main:562 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894]
+2021-06-05 20:01:29  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 20:01:29  [ main:356 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 20:01:29  [ main:360 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894] was not registered for synchronization because synchronization is not active
+2021-06-05 20:01:29  [ main:535 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@d71adc2] will not be managed by Spring
+2021-06-05 20:01:29  [ main:539 ] - [ DEBUG ]  ==>  Preparing: select * from book_list; 
+2021-06-05 20:01:29  [ main:556 ] - [ DEBUG ]  ==> Parameters: 
+2021-06-05 20:01:29  [ main:568 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894]
+2021-06-05 20:13:21  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 20:13:21  [ main:340 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 20:13:21  [ main:344 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894] was not registered for synchronization because synchronization is not active
+2021-06-05 20:13:21  [ main:514 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@d71adc2] will not be managed by Spring
+2021-06-05 20:13:21  [ main:518 ] - [ DEBUG ]  ==>  Preparing: select * from book_list; 
+2021-06-05 20:13:21  [ main:536 ] - [ DEBUG ]  ==> Parameters: 
+2021-06-05 20:13:21  [ main:547 ] - [ DEBUG ]  <==      Total: 1
+2021-06-05 20:13:21  [ main:548 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72bca894]
+2021-06-05 20:32:52  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-05 20:32:52  [ main:388 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-05 20:32:52  [ main:394 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@329a1243] was not registered for synchronization because synchronization is not active
+2021-06-05 20:32:53  [ main:635 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@60b85ba1] will not be managed by Spring
+2021-06-05 20:32:53  [ main:638 ] - [ DEBUG ]  ==>  Preparing: update book_list set status = ?, book_num = book_num-1 where ISBN = ? 
+2021-06-05 20:32:53  [ main:656 ] - [ DEBUG ]  ==> Parameters: 库存(String), 12345(String)
+2021-06-05 20:32:53  [ main:662 ] - [ DEBUG ]  <==    Updates: 1
+2021-06-05 20:32:53  [ main:662 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@329a1243]

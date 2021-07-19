@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyx.dao.ReInfoDao">
+    <insert id="insertInfo" parameterType="com.wyx.entity.ReaderInfo" >
+        insert into reader_information values
+        (#{reName},#{stuID},#{reSex},#{Email});
+    </insert>
+
+    <select id="queryAllInfo" resultType="com.wyx.entity.ReaderInfo" resultMap="ReInfoMap">
+        select * from reader_information;
+    </select>
+
+    <select id="queryByName" parameterType="String" resultMap="ReInfoMap">
+        select * from reader_information where reader_name = #{name};
+    </select>
+
+    <update id="updateInfo" parameterType="com.wyx.entity.ReaderInfo">
+        update reader_information
+        set reader_name = #{reName},reader_sex = #{reSex},contact_information = #{Email}
+        where student_id = #{stuID};
+    </update>
+
+    <resultMap id="ReInfoMap" type="com.wyx.entity.ReaderInfo">
+        <result property="reName" column="reader_name"/>
+        <result property="stuID" column="student_id"/>
+        <result property="reSex" column="reader_sex"/>
+        <result property="Email" column="contact_information"/>
+    </resultMap>
+
+</mapper>

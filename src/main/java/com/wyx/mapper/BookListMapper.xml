@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyx.dao.BookListDao">
+    <select id="queryAllBook" resultType="com.wyx.entity.BookList" resultMap="BookMap">
+        select * from book_list;
+    </select>
+
+    <insert id="insertBook" parameterType="com.wyx.entity.BookList">
+        insert into book_list values
+        (#{bookName},#{author},#{ISBN},#{summary},#{language},#{status},#{bookNum})
+    </insert>
+
+    <select id="queryBookById" parameterType="String" resultType="com.wyx.entity.BookList" resultMap="BookMap">
+        select * from book_list where
+        ISBN = #{ISBN}
+    </select>
+
+    <update id="changeByStatus">
+        update book_list set status = #{status}, book_num = book_num-1 where ISBN = #{ISBN}
+    </update>
+
+    <select id="queryByName" parameterType="String" resultType="com.wyx.entity.BookList" resultMap="BookMap">
+        select * from booK_list where
+        book_name = #{bookName}
+    </select>
+
+    <select id="queryByAuthor" parameterType="String" resultType="com.wyx.entity.BookList" resultMap="BookMap">
+        select * from booK_list where
+            author = #{author}
+    </select>
+
+    <resultMap id="BookMap" type="com.wyx.entity.BookList">
+        <result property="bookName" column="book_Name"/>
+        <result property="author" column="author"/>
+        <result property="ISBN" column="ISBN"/>
+        <result property="summary" column="summary"/>
+        <result property="language" column="language"/>
+        <result property="status" column="status"/>
+        <result property="bookNum" column="book_num"/>
+    </resultMap>
+</mapper>

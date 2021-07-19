@@ -1,0 +1,50 @@
+2021-06-14 18:15:50  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:17:38  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:17:59  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:19:38  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:21:11  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:24:11  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:25:38  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:28:15  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:28:25  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:28:46  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:30:11  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:30:32  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:34:30  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:37:10  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:41:17  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:41:55  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:41:56  [ main:339 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-14 18:41:56  [ main:345 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c43e48] was not registered for synchronization because synchronization is not active
+2021-06-14 18:41:56  [ main:574 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ee39da0] will not be managed by Spring
+2021-06-14 18:41:56  [ main:579 ] - [ DEBUG ]  ==>  Preparing: update book_list set status = ?, book_num = book_num-1 where ISBN = ? 
+2021-06-14 18:41:56  [ main:596 ] - [ DEBUG ]  ==> Parameters: 库存(String), 12345(String)
+2021-06-14 18:41:56  [ main:604 ] - [ DEBUG ]  <==    Updates: 1
+2021-06-14 18:41:56  [ main:605 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c43e48]
+2021-06-14 18:45:06  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:45:21  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 18:47:14  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 19:57:41  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 20:06:05  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 20:06:05  [ main:375 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-14 20:06:05  [ main:380 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b39fd82] was not registered for synchronization because synchronization is not active
+2021-06-14 20:06:05  [ main:625 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@2bffa76d] will not be managed by Spring
+2021-06-14 20:06:05  [ main:631 ] - [ DEBUG ]  ==>  Preparing: insert into reader_information values ((?,?,?,?); 
+2021-06-14 20:06:05  [ main:649 ] - [ DEBUG ]  ==> Parameters: wen111(String), 0(Integer), 男(String), 28160519288@qq.com(String)
+2021-06-14 20:06:05  [ main:651 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b39fd82]
+2021-06-14 20:06:34  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 20:06:35  [ main:416 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-14 20:06:35  [ main:420 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b39fd82] was not registered for synchronization because synchronization is not active
+2021-06-14 20:06:35  [ main:644 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@2bffa76d] will not be managed by Spring
+2021-06-14 20:06:35  [ main:648 ] - [ DEBUG ]  ==>  Preparing: insert into reader_information values (?,?,?,?); 
+2021-06-14 20:06:35  [ main:665 ] - [ DEBUG ]  ==> Parameters: wen111(String), 0(Integer), 男(String), 28160519288@qq.com(String)
+2021-06-14 20:06:35  [ main:674 ] - [ DEBUG ]  <==    Updates: 1
+2021-06-14 20:06:35  [ main:675 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b39fd82]
+2021-06-14 20:12:38  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-14 20:12:39  [ main:382 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-14 20:12:39  [ main:385 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c807b1d] was not registered for synchronization because synchronization is not active
+2021-06-14 20:12:39  [ main:550 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@3fcdcf] will not be managed by Spring
+2021-06-14 20:12:39  [ main:553 ] - [ DEBUG ]  ==>  Preparing: select * from reader_information; 
+2021-06-14 20:12:39  [ main:570 ] - [ DEBUG ]  ==> Parameters: 
+2021-06-14 20:12:39  [ main:584 ] - [ DEBUG ]  <==      Total: 1
+2021-06-14 20:12:39  [ main:585 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c807b1d]

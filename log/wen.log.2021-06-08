@@ -1,0 +1,8 @@
+2021-06-08 11:15:34  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2021-06-08 11:15:35  [ main:887 ] - [ DEBUG ]  Creating a new SqlSession
+2021-06-08 11:15:35  [ main:901 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29caf222] was not registered for synchronization because synchronization is not active
+2021-06-08 11:15:36  [ main:1555 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@17ae98d7] will not be managed by Spring
+2021-06-08 11:15:36  [ main:1564 ] - [ DEBUG ]  ==>  Preparing: update book_list set status = ?, book_num = book_num-1 where ISBN = ? 
+2021-06-08 11:15:36  [ main:1607 ] - [ DEBUG ]  ==> Parameters: 库存(String), 12345(String)
+2021-06-08 11:15:36  [ main:1640 ] - [ DEBUG ]  <==    Updates: 1
+2021-06-08 11:15:36  [ main:1641 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29caf222]
